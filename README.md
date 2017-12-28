@@ -1,5 +1,5 @@
 # ToDoApp-ReactNative
-To-do List app with ReactNative
+To-do List app with ReactNative & Firebase
 
 Goal:
 To continue to learn and play with the basics of React Native. By no mean this is a fancy app as 
@@ -9,6 +9,7 @@ Dependency:
 - Moment (for rendering time/date)
 - React Native
 - React
+- Firebase
 
 Screenshot:
 ---------------------------------------------
