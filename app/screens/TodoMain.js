@@ -53,20 +53,22 @@ export default class TodoMain extends React.Component {
     }
   }
 
-  deleteNote(key) {
-    this.state.notes.splice(key, 1);
-    this.setState({ notes: this.state.notes });
+  deleteNote(i) {
+		console.log(i);
+    this.state.notes.splice(i, 1);
+		this.setState({ notes: this.state.notes });
+		console.log('this is delete' + this.state.notes);
   }
 
   render() {
     const { notes } = this.state;
-    const notess = notes.map((chiled, i) => {
+    const notess = notes.map((note, i) => {
       return (
         <Card
           key={i}
           keyVal={i}
-          note={chiled}
-          onPress={() => this.deleteNote(chiled)}
+          note={note}
+          onPress={() => this.deleteNote(i)}
         />
       );
     });
